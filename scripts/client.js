@@ -28,11 +28,27 @@ function addNewEmployee () {
         <td>${annualSalary}</td>
         <button class="remove-employee">Remove</button>
     `)
+    console.log(parseInt(annualSalary));
+    // total += parseInt(annualSalary);
+    // total = total/12
+    // total = total.toFixed(2);
+    total += (Math.round((annualSalary)/12))
+    // .toFixed(2);
+    totalUpdate ();
+    
 }
 
 total = 0;
-    for (let i=0; i < total; i++){
-        totalSalary += i
-    }
+//     for (let i=0; i < total; i++){
+//         total += i
+//     }
 
-totalSalary = total 
+// totalSalary = total 
+
+function totalUpdate (){
+    $('#total-salaries').text('')
+    $('#total-salaries').text(`
+        Total: ${total}
+    `)
+    
+}
