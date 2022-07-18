@@ -3,7 +3,8 @@ $(readyNow);
 
 function readyNow() {
     console.log('ready now');
-    $('#submit-button').on('click', addNewEmployee);
+    // $('#submit-button').on('click', addNewEmployee);
+    $('#submit-button').click(addNewEmployee);
 
 }
 
@@ -25,8 +26,13 @@ function addNewEmployee () {
         <td>${id}</td>
         <td>${title}</td>
         <td>${annualSalary}</td>
+        <button class="remove-employee">Remove</button>
     `)
 }
 
-totalSalary = 0;
-    for (let )
+total = 0;
+    for (let i=0; i < total; i++){
+        totalSalary += i
+    }
+
+totalSalary = total 
