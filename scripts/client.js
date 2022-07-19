@@ -21,12 +21,14 @@ function addNewEmployee () {
     console.log(annualSalary);
 
     $('#employee-table').append(`
+        <tr>
         <td>${firstName}</td>
         <td>${lastName}</td>
         <td>${id}</td>
         <td>${title}</td>
         <td>${annualSalary}</td>
-        <button class="remove-employee">Remove</button>
+        <td><button class="remove-employee">Remove</button></td>
+        </tr>
     `)
     console.log(parseInt(annualSalary));
     // total += parseInt(annualSalary);
@@ -48,7 +50,7 @@ total = 0;
 function totalUpdate (){
     $('#total-salaries').text('')
     $('#total-salaries').text(`
-        Total: ${total}
+        Total: $${total}
     `)
     
 }
