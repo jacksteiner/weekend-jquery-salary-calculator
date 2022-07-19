@@ -2,11 +2,12 @@
     margin: 10px;
     text-align: center;
     border: 1px solid;
+    
     /*border-collapse:collapse;*/
   } 
 
   thead {
-    background-color: blueviolet;
+    background-color: rgb(208, 132, 148);
   }
 
   th {
@@ -14,8 +15,71 @@
   }
 
   tr:nth-child(even){
-    background-color: aquamarine;
+    background-color: rgb(208, 132, 148);
   }
 
+  #inputs {
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #submit-button {
+    text-align: center;
+  }
+
+  #total-salaries {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+  }
   
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #employeeheader {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+
+#contents {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  background: #cd8fd1;
+  box-shadow:  50px 50px 100px #9e6ea1,
+               -50px -50px 100px #fcb0ff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fcb0ff;
+}
+
+button {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  size: 20px;
+  
+}
+
+button:hover {
+  background-color: #a45679;
+  color: #ffffff;
+  
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
   /* border: 1px solid; */

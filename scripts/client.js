@@ -5,7 +5,7 @@ function readyNow() {
     console.log('ready now');
     // $('#submit-button').on('click', addNewEmployee);
     $('#submit-button').click(addNewEmployee);
-
+    $('body').on('click' , '.remove-emplyoee', removeEmployee);
 }
 
 function addNewEmployee () {
@@ -30,6 +30,7 @@ function addNewEmployee () {
         <td><button class="remove-employee">Remove</button></td>
         </tr>
     `)
+    $('.remove-employee').click(removeEmployee)
     console.log(parseInt(annualSalary));
     // total += parseInt(annualSalary);
     // total = total/12
@@ -37,6 +38,14 @@ function addNewEmployee () {
     total += (Math.round((annualSalary)/12))
     // .toFixed(2);
     totalUpdate ();
+    if (total > 20000 ){
+        alert('over budget!')
+        console.log('over budget!');
+        // $('#total-salaries')
+        $('p').css('background-color', 'red');
+        
+    }
+
     
 }
 
@@ -53,4 +62,9 @@ function totalUpdate (){
         Total: $${total}
     `)
     
+}
+
+function removeEmployee () {
+    console.log('in remove')
+    $(this).parent().parent().remove();
 }
